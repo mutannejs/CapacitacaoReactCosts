@@ -1,0 +1,20 @@
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.min-height { /* garante que os elementos que sejam dessa classe ocupem pelo menos 75% da tela, útil quando seu conteúdo é não ocupa essa porcentagem */
+    min-height: 75%;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
+}
