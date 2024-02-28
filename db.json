@@ -1,20 +1,69 @@
 {
   "projects": [
     {
-      "id": "fbb0",
-      "name": "Primeiro projeto",
-      "budget": "5000",
+      "id": "ba4e",
+      "name": "Costs",
+      "budget": "10000",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": []
+      "cost": 6000,
+      "services": [
+        {
+          "name": "Hospedagem",
+          "cost": "800",
+          "description": "Hospedagem da aplicação quando concluida",
+          "id": "e97f8598-5bb9-40d5-9a12-5e5086d657bd"
+        },
+        {
+          "name": "Visibilidade",
+          "cost": "1200",
+          "description": "Aumentar alcance da aplicação",
+          "id": "8bab1cfb-d413-40c1-a012-e633da0bd7f7"
+        },
+        {
+          "name": "Mobile",
+          "cost": "2000",
+          "description": "Versão mobile da aplicação",
+          "id": "e0985623-6a70-4c20-9dad-34eebabb9bfe"
+        },
+        {
+          "name": "Desktop",
+          "cost": "2000",
+          "description": "Versão desktop da aplicação",
+          "id": "9ed997ad-4797-451d-a4b7-93cbf7282cfd"
+        }
+      ]
     },
     {
-      "id": "2680",
-      "name": "Teste",
-      "budget": "5000",
+      "id": "1ab4",
+      "name": "Bio Protótipo",
+      "budget": "2000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 900,
+      "services": [
+        {
+          "name": "Gerar imagens",
+          "cost": "200",
+          "description": "Gerar imagens para as páginas que serão usadas no protótipo",
+          "id": "1b9890bb-d9d7-4fb5-8390-e764897c311f"
+        },
+        {
+          "name": "Figma",
+          "cost": "700",
+          "description": "Pagar licença Figma",
+          "id": "35c659e5-8d0f-45d0-a803-d2f7c49d42e6"
+        }
+      ]
+    },
+    {
+      "id": "1cce",
+      "name": "Proxmox",
+      "budget": "8000",
       "category": {
         "id": "4",
         "name": "Planejamento"
@@ -23,13 +72,13 @@
       "services": []
     },
     {
-      "id": "ba4e",
-      "name": "Costs",
-      "budget": "100",
+      "id": "acf3",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infra"
       },
+      "name": "Servidor",
+      "budget": "400",
       "cost": 0,
       "services": []
     }
