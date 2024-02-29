@@ -4,6 +4,9 @@
     border-radius: 5px;
     width: 24%;
     margin: .5%;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
 }
 
 .project_card h4 {

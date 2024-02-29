@@ -27,6 +27,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
                 name="name"
                 placeholder="Insira o nome do serviço"
                 handleOnChange={handleChange}
+                isRequired={true}
             />
             <Input
                 type="number"
@@ -34,6 +35,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
                 name="cost"
                 placeholder="Insira o valor total"
                 handleOnChange={handleChange}
+                isRequired={true}
             />
             <Input
                 type="text"
