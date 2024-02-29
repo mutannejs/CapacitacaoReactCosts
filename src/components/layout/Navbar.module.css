@@ -20,6 +20,17 @@
     text-decoration: none;
 }
 
-.item a:hover {
+.item a:hover, .login a:hover, .sair:hover {
     color: #ffbb33;
+}
+
+.login a, .sair {
+    font-weight: bold;
+}
+
+.sair {
+    background-color: #222;
+    border: none;
+    color: white;
+    font-size: 1em;
 }

@@ -5,7 +5,7 @@ import Container from './Container';
 import styles from './Navbar.module.css';
 import logo from '../../img/costs_logo.png';
 
-function Navbar() {
+function Navbar({ logado, setLogado }) {
     return (
         <nav className={styles.navbar}>
             <Container>
@@ -24,6 +24,16 @@ function Navbar() {
                     </li>
                     <li className={styles.item}>
                         <Link to="/contact">Contato</Link>
+                    </li>
+                    <li className={styles.item}>
+                        { logado ? (
+                                <button className={styles.sair} onClick={() => setLogado(false)} >Sair</button>
+                            ) : (
+                                <span className={styles.login}>
+                                    <Link to="/login">Login</Link>
+                                </span>
+                            )
+                        }
                     </li>
                 </ul>
             </Container>
