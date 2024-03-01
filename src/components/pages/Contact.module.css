@@ -1,10 +1,14 @@
-.login_container {
+.contact_container {
     width: 740px;
     padding: 2em;
     margin: 0 auto;
 }
 
-.login_container p {
+.contact_container h1 {
+    margin-bottom: .5em;
+}
+
+.contact_container p {
     color: #7b7b7b;
 }
 

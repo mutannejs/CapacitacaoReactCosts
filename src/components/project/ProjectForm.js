@@ -53,7 +53,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
                 placeholder="Insira o nome do projeto"
                 handleOnChange={handleChange}
                 value={project.name ? project.name : ''}
-                isRequired={true}
+                isRequired='required'
             />
             <Input
                 type="number"
@@ -62,7 +62,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
                 placeholder="Insira o orçamento total"
                 handleOnChange={handleChange}
                 value={project.budget ? project.budget : ''}
-                isRequired={true}
+                isRequired='required'
             />            
             <Select
                 name="category_id"
@@ -70,7 +70,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
                 text="Selecione a categoria"
                 handleOnChange={handleCategory}
                 value={project.category ? project.category.id : ''}
-                isRequired={true}
+                isRequired='required'
             />
             <SubmitButton text={btnText} />
         </form>
