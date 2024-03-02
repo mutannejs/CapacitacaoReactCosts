@@ -5,7 +5,7 @@ function Select({ text, name, options, handleOnChange, value, isRequired }) {
     function content() {
          return (
             <>
-                <option selected disabled value=''>Selecione uma opção</option>
+                <option disabled value=''>Selecione uma opção</option>
                 { options.map( (option) => (
                     <option key={option.id} value={option.id}>
                         {option.name}

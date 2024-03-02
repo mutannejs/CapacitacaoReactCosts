@@ -15,7 +15,7 @@ import Footer from './components/layout/Footer';
 
 function App() {
 
-  const [logado, setLogado] = useState(false);
+  const [logado, setLogado] = useState(true);
 
   return (
 

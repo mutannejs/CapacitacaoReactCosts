@@ -13,7 +13,6 @@ function Home({ logado }) {
 
     const location = useLocation();
     if (location.state) {
-        console.log(location);
         message = location.state.msg;
         type = location.state.type;
     }

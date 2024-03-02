@@ -1,0 +1,28 @@
+.show_contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    color: #ffbb33;
+    padding: 1em 2em;
+    background-color: #222;
+    border: none;
+    border-radius: 4.2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.icon, .icon svg {
+    float: right;
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+.rotateDown {
+    transform: rotate(90deg);
+}
+
+.rotateRight {
+    transform: rotate(0deg);
+}
