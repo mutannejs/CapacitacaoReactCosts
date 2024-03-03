@@ -7,8 +7,7 @@ O <strong>Costs</strong> é um gerenciador de projetos.
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#-tecnologias">Tecnologias</a>
 </p>
 
 <p align="center">
@@ -57,7 +56,3 @@ O projeto será aberto automaticamente no seu navegador padrão.
 - HTML e CSS
 - JavaScript
 - React
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT.
