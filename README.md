@@ -6,7 +6,7 @@ O <strong>Costs</strong> é um gerenciador de projetos.
 
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#gear-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -39,12 +39,16 @@ Para rodar essa aplicação é encessário ter previamente o **node** instalado 
 
 Entre na pasta do projeto e execute o comando
 
-  npm i
+```
+npm i
+```
 
 Depois execute os dois comandos (pode-se executá-los em dois terminais diferentes):
 
-  npm run backend
-  npm start
+```
+npm run backend
+npm start
+```
 
 O projeto será aberto automaticamente no seu navegador padrão.
 
