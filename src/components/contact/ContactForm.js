@@ -1,13 +1,17 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 import Input from '../form/Input';
 import Select from '../form/Select';
 import TextArea from '../form/TextArea';
 import SubmitButton from '../form/SubmitButton';
 
+import { LoginContext } from '../context/LoginContext';
+
 import styles from './ContactForm.module.css';
 
 function ContactForm({ setMessage, setType }) {
+
+    const { username } = useContext(LoginContext);
 
     const types = [
         {id: 'opinion', name:'Opinião'},
@@ -49,16 +53,18 @@ function ContactForm({ setMessage, setType }) {
 
     return (
         <form onSubmit={submit} className={styles.form}>
-            <Input
-                type='text'
-                name='name'
-                text='Informe seu nome'
-                id='name'
-                placeholder='Digite seu nome completo'
-                handleOnChange={changeText}
-                value={contact.name ? contact.name : ''}
-                isRequired={true}
-            />
+            { !username &&
+                <Input
+                    type='text'
+                    name='name'
+                    text='Informe seu nome'
+                    id='name'
+                    placeholder='Informe seu username'
+                    handleOnChange={changeText}
+                    value={contact.name ? contact.name : ''}
+                    isRequired={true}
+                />
+            }
             <Select
                 text='Qual o tema da mensagem'
                 name='types'

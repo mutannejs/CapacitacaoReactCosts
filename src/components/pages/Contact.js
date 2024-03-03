@@ -25,21 +25,22 @@ function Contact() {
             }
         })
             .then((resp) => resp.json())
-            .then((data) => setContacts(data))
+            .then((data) => {
+                setContacts(data.filter((contact) => contact.name === username));
+            })
             .catch((err) => console.log(err));
-    }, []);
+    }, [username]);
 
     return (
         <>
-            { !username ? (
+            <div className={styles.contact_container}>
+                { message && <Message msg={message} type={type} /> }
+                <h1>Contato</h1>
+                <p>Envie uma mensagem para opinar, reclamar ou elogiar a aplicação. Sinta-se a vontade para sugerir novas funcionalidades.</p>
+                <ContactForm setMessage={setMessage} setType={setType} />
+            </div>
+            { username && (
                     <div className={styles.contact_container}>
-                        { message && <Message msg={message} type={type} /> }
-                        <h1>Contato</h1>
-                        <p>Envie uma mensagem para opinar, reclamar ou elogiar a aplicação. Sinta-se a vontade para sugerir novas funcionalidades.</p>
-                        <ContactForm setMessage={setMessage} setType={setType} />
-                    </div>
-                ) : (
-                    <div className={styles.contacts_container}>
                         { message && <Message msg={message} type={type} /> }
                         <h1>Mensagens enviadas</h1>
                         <Contacts setContacts={setContacts} contacts={contacts} setMessage={setMessage} setType={setType} />

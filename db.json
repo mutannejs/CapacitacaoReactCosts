@@ -1,88 +1,5 @@
 {
-  "projects": [
-    {
-      "id": "ba4e",
-      "name": "Costs",
-      "budget": "10000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 6000,
-      "services": [
-        {
-          "name": "Hospedagem",
-          "cost": "800",
-          "description": "Hospedagem da aplicação quando concluida",
-          "id": "e97f8598-5bb9-40d5-9a12-5e5086d657bd"
-        },
-        {
-          "name": "Visibilidade",
-          "cost": "1200",
-          "description": "Aumentar alcance da aplicação",
-          "id": "8bab1cfb-d413-40c1-a012-e633da0bd7f7"
-        },
-        {
-          "name": "Mobile",
-          "cost": "2000",
-          "description": "Versão mobile da aplicação",
-          "id": "e0985623-6a70-4c20-9dad-34eebabb9bfe"
-        },
-        {
-          "name": "Desktop",
-          "cost": "2000",
-          "description": "Versão desktop da aplicação",
-          "id": "9ed997ad-4797-451d-a4b7-93cbf7282cfd"
-        }
-      ]
-    },
-    {
-      "id": "1ab4",
-      "name": "Bio Protótipo",
-      "budget": "2000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 900,
-      "services": [
-        {
-          "name": "Gerar imagens",
-          "cost": "200",
-          "description": "Gerar imagens para as páginas que serão usadas no protótipo",
-          "id": "1b9890bb-d9d7-4fb5-8390-e764897c311f"
-        },
-        {
-          "name": "Figma",
-          "cost": "700",
-          "description": "Pagar licença Figma",
-          "id": "35c659e5-8d0f-45d0-a803-d2f7c49d42e6"
-        }
-      ]
-    },
-    {
-      "id": "1cce",
-      "name": "Proxmox",
-      "budget": "8000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "acf3",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "name": "Servidor",
-      "budget": "500",
-      "cost": null,
-      "services": []
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": "1",
@@ -101,18 +18,5 @@
       "name": "Planejamento"
     }
   ],
-  "contacts": [
-    {
-      "id": "cca8",
-      "name": "Ronaldo",
-      "type": "opinion",
-      "msg": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisi purus, maximus in quam a, dictum vehicula nibh. Curabitur metus nisi, euismod hendrerit urna a, efficitur placerat lectus. Curabitur ac consectetur elit, hendrerit dignissim erat. Nullam a malesuada ipsum. Aliquam a consequat justo. Maecenas quis elit velit. Nam efficitur convallis ante, et dignissim nulla vulputate eu. Nullam efficitur mollis arcu a imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus sed neque fringilla, rutrum nulla et, hendrerit ex. Maecenas rhoncus euismod sapien, vitae porttitor magna. Nunc semper sagittis risus, sit amet rutrum sapien tristique lobortis. Fusce vel libero nunc. Morbi eu interdum mi. "
-    },
-    {
-      "id": "bfda",
-      "name": "Paula",
-      "type": "opinion",
-      "msg": "Topzera"
-    }
-  ]
+  "contacts": []
 }

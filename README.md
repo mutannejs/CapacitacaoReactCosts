@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+<h1 align="center"> Costs </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+O <strong>Costs</strong> é um gerenciador de projetos.
+</p>
 
-## Available Scripts
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="projeto DevLinks" src=".github/preview.png" width="100%">
+</p>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💻 Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Esse projeto foi baseado no Curso de React do **[Hora de Codar](https://youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&si=YzJ-gxcxd5MgecJk)**.
 
-### `npm test`
+Além do projeto base, foi implementado uma página de **Login** e uma página de **Contato**. A página de contato se comporta de maneira diferente quando logado. Com essas novas funcionalidades pude praticar os conhecimentos adquiridos durante o curso e utilizar novas ferramentas. Alguns dos conceitos utilizado são:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Os hooks: useState, useEffect, useContext e useNavigate;
+- fetch API;
+- Renderização condicional e Renderização de listas;
 
-### `npm run build`
+### A página de Contato quando logado
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <img alt="página de contato" src=".github/contact.png" width="100%">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :gear: Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para rodar essa aplicação é encessário ter previamente o **node** instalado em sua máquina.
 
-### `npm run eject`
+Entre na pasta do projeto e execute o comando
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  npm i
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Depois execute os dois comandos (pode-se executá-los em dois terminais diferentes):
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  npm run backend
+  npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O projeto será aberto automaticamente no seu navegador padrão.
 
-## Learn More
+## 🚀 Tecnologias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- HTML e CSS
+- JavaScript
+- React
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :memo: Licença
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esse projeto está sob a licença MIT.
