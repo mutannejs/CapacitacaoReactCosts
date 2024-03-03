@@ -1,15 +1,20 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 import ContactForm from "../contact/ContactForm";
 import Contacts from '../contact/Contacts';
 import Message from "../layout/Message";
 
+import { LoginContext } from './../context/LoginContext';
+
 import styles from './Contact.module.css';
 
-function Contact({ logado }) {
+function Contact() {
+
+    const { username } = useContext(LoginContext);
 
     const [message, setMessage] = useState();
     const [type, setType] = useState();
+
     const [contacts, setContacts] = useState([]);
 
     useEffect(() => {
@@ -26,7 +31,7 @@ function Contact({ logado }) {
 
     return (
         <>
-            { !logado ? (
+            { !username ? (
                     <div className={styles.contact_container}>
                         { message && <Message msg={message} type={type} /> }
                         <h1>Contato</h1>
@@ -36,7 +41,7 @@ function Contact({ logado }) {
                 ) : (
                     <div className={styles.contacts_container}>
                         { message && <Message msg={message} type={type} /> }
-                        <h1>Contatos</h1>
+                        <h1>Mensagens enviadas</h1>
                         <Contacts setContacts={setContacts} contacts={contacts} setMessage={setMessage} setType={setType} />
                     </div>
                 ) 

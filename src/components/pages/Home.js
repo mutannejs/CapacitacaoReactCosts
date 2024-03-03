@@ -6,7 +6,7 @@ import savings from '../../img/savings.svg';
 import LinkButton from '../layout/LinkButton';
 import Message from '../layout/Message';
 
-function Home({ logado }) {
+function Home() {
 
     let message = '';
     let type = '';
@@ -19,7 +19,7 @@ function Home({ logado }) {
 
     return (
         <section className={styles.home_container}>
-            { message && logado && <Message msg={message} type={type} />}
+            { message && <Message msg={message} type={type} />}
             <h1>Bem-vindo ao <span>Costs</span></h1>
             <p>Comece a gerenciar os seus projetos agora mesmo!</p>
             <LinkButton to="/newproject" text="Criar Projeto" />

@@ -1,11 +1,17 @@
 import  { Link } from 'react-router-dom';
+import { useContext } from 'react';
 
 import Container from './Container';
 
 import styles from './Navbar.module.css';
 import logo from '../../img/costs_logo.png';
 
-function Navbar({ logado, setLogado }) {
+import { LoginContext } from '../context/LoginContext';
+
+function Navbar() {
+
+    const { username, setUsername } = useContext(LoginContext);
+
     return (
         <nav className={styles.navbar}>
             <Container>
@@ -26,8 +32,8 @@ function Navbar({ logado, setLogado }) {
                         <Link to="/contact">Contato</Link>
                     </li>
                     <li className={styles.item}>
-                        { logado ? (
-                                <button className={styles.sair} onClick={() => setLogado(false)} >Sair</button>
+                        { username ? (
+                                <button className={styles.sair} onClick={() => setUsername('')} >Sair</button>
                             ) : (
                                 <span className={styles.login}>
                                     <Link to="/login">Login</Link>

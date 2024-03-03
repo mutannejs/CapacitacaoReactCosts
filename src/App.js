@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState } from "react";
 
 import Home from './components/pages/Home';
 import Projects from './components/pages/Projects';
@@ -15,21 +14,19 @@ import Footer from './components/layout/Footer';
 
 function App() {
 
-  const [logado, setLogado] = useState(true);
-
   return (
 
     <Router>
 
-      <Navbar logado={logado} setLogado={setLogado} />
+      <Navbar />
 
       <Container customClass="min-height">
         <Routes>
-          <Route path="/" element={<Home logado={logado} />} />
+          <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/company" element={<Company />} />
-          <Route path="/contact" element={<Contact logado={logado} />} />
-          <Route path="/login" element={<Login setLogado={setLogado} />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/newproject" element={<NewProject />} />
           <Route path="/project/:id" element={<Project />} /> {/* :id mostra para o react que alguma coisa será passada dinâmicamente nesse local */}
         </Routes>

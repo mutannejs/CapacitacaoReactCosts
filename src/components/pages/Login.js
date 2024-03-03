@@ -1,19 +1,20 @@
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useState, useContext } from 'react';
 
 import Input from '../form/Input';
 import SubmitButton from '../form/SubmitButton';
 
-import styles from './Login.module.css';
 import Message from '../layout/Message';
-import { useNavigate } from 'react-router-dom';
+import { LoginContext } from './../context/LoginContext';
 
-function Login({ setLogado }) {
+import styles from './Login.module.css';
 
-    const usernameAdm = 'admin';
-    const passAdm = 'costs';
+function Login() {
 
-    const [username, setUsername] = useState('');
-    const [pass, setPass] = useState('');
+    const { setUsername } = useContext(LoginContext);
+
+    const [user, setUser] = useState('');
+    const [password, setPassword] = useState('');
 
     const [message, setMessage] = useState();
     const [type, setType] = useState();
@@ -22,9 +23,9 @@ function Login({ setLogado }) {
 
     function submit(e) {
         e.preventDefault();
-        if (username === usernameAdm && pass === passAdm) {
-            setLogado(true);
-            const state = {msg: `Login efetuado com o usuário ${username}`, type: 'success'};
+        if (user === password) {
+            setUsername(user);
+            const state = {msg: `Login efetuado com o usuário ${user}`, type: 'success'};
             navigate('/', {state});
         } else {
             setMessage(`Não foi possível se logar com o usuário e senha informado!`);
@@ -44,7 +45,8 @@ function Login({ setLogado }) {
                     placeholder='Informe seu username'
                     id='username'
                     name='username'
-                    handleOnChange={ (e) => setUsername(e.target.value) }
+                    handleOnChange={ (e) => setUser(e.target.value) }
+                    isRequired={true}
                 />
                 <Input
                     type='password'
@@ -52,7 +54,7 @@ function Login({ setLogado }) {
                     placeholder='Informe sua senha'
                     id='pass'
                     name='pass'
-                    handleOnChange={ (e) => setPass(e.target.value) }
+                    handleOnChange={ (e) => setPassword(e.target.value) }
                 />
                 <SubmitButton text='Logar' />
             </form>

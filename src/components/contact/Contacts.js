@@ -43,7 +43,7 @@ function Contacts({ contacts, setContacts, setMessage, setType }) {
             <div className={styles.show_contacts} onClick={toogleShowContacts}>
                 <div>
                     <span>{!showContacts ? 'Exibir' : 'Esconder'} </span>
-                    contatos dos Usuários
+                    suas mensagens
                 </div>
                 <span className={styleIcon}>
                     <BsCaretRightFill />
