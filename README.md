@@ -12,7 +12,7 @@ O <strong>Costs</strong> é um gerenciador de projetos.
 </p>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/preview.png" width="100%">
+  <img alt="projeto Costs" src=".github/preview.png" width="100%">
 </p>
 
 <br>
